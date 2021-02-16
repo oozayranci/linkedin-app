@@ -12,7 +12,7 @@ function Feed() {
     const [posts, setPosts] = useState([]);
 
     const sendPost = (e) => {
-        e.preventDefault();
+        e.preventDefault(); // prevent auto-refresh
     }
 
     return (
