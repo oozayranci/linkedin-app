@@ -8,8 +8,7 @@ function App() {
   return (
     <div className="app">
       <Header />
-
-      {/* App Body */}
+      
       <div className="app__body">
         <Sidebar />
         <Feed />
