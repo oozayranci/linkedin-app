@@ -28,7 +28,7 @@ function Feed() {
     const sendPost = (e) => {
         e.preventDefault();
         db.collection('posts').add({
-            name: 'Posts for the user',
+            name: 'Ozan Özayranci',
             description: 'this is a test',
             message: input,
             photoUrl: '',
@@ -58,14 +58,16 @@ function Feed() {
                 </div>
             </div>
 
-            {posts.map((post) => (
-                <Posts />
+            {posts.map(({ id, data: { name, description, message,
+            photoUrl }}) => (
+                <Posts 
+                  key={id}
+                  name={name}
+                  description={description}
+                  message={message}
+                  photoUrl={photoUrl}
+                />
             ))}
-            <Posts 
-            name='Ozan Özayranci' 
-            description='This is a test' 
-            message='Message worked!' 
-            />
         </div>
     );
 };
