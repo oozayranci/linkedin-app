@@ -1,13 +1,13 @@
-import React, { useState } from 'react';
-import { auth } from "./firebase"
+import React, {useState} from 'react';
+import {auth} from './firebase';
 import './Login.css';
 
 function Login () {
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
-  const [name, setName] = useState("");
-  const loginApp = (e) => {
-      e.preventDefault();
+  const [email, setEmail] = useState ('');
+  const [password, setPassword] = useState ('');
+  const [name, setName] = useState ('');
+  const loginApp = e => {
+    e.preventDefault ();
   };
   const register = () => {};
   return (
@@ -18,10 +18,25 @@ function Login () {
       />
 
       <form>
-        <input value={name} onChange={(e) => setName(e.target.value)} placeholder="Full name (required if registering)" type="text" />
-        <input value={password} onChange={(e) => setPassword(e.target.value)} placeholder="Profile picture URL (optional)" type="text" />
-        <input value={email} onChange={(e) => setEmail(e.target.value)} placeholder="email" type="email" />
-        <input value={password} onChange={(e) => setPassword(e.target.value)} placeholder="Password" type="password" />
+        <input
+          value={name}
+          onChange={e => setName (e.target.value)}
+          placeholder="Full name (required if registering)"
+          type="text"
+        />
+        <input placeholder="Profile picture URL (optional)" type="text" />
+        <input
+          value={email}
+          onChange={e => setEmail (e.target.value)}
+          placeholder="email"
+          type="email"
+        />
+        <input
+          value={password}
+          onChange={e => setPassword (e.target.value)}
+          placeholder="Password"
+          type="password"
+        />
         <button type="submit" onClick={loginApp}>Sign In</button>
       </form>
       <p>
