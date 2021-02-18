@@ -2,8 +2,10 @@ import React from 'react';
 import './Login.css';
 
 function Login () {
+  const loginApp = (e) => {
+      e.preventDefault();
+  };
   const register = () => {};
-  const loginApp = () => {};
   return (
     <div className="login">
       <img
