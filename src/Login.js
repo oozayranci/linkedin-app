@@ -18,10 +18,10 @@ function Login () {
       />
 
       <form>
-        <input value={name} placeholder="Full name (required if registering)" type="text" />
-        <input placeholder="Profile picture URL (optional)" type="text" />
-        <input placeholder="email" type="email" />
-        <input placeholder="Password" type="password" />
+        <input value={name} onChange={(e) => setName(e.target.value)} placeholder="Full name (required if registering)" type="text" />
+        <input value={password} onChange={(e) => setPassword(e.target.value)} placeholder="Profile picture URL (optional)" type="text" />
+        <input value={email} onChange={(e) => setEmail(e.target.value)} placeholder="email" type="email" />
+        <input value={password} onChange={(e) => setPassword(e.target.value)} placeholder="Password" type="password" />
         <button type="submit" onClick={loginApp}>Sign In</button>
       </form>
       <p>
