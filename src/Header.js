@@ -23,7 +23,7 @@ export default function Header () {
     <div className="header">
       <div className="header__left">
         <img
-          src="https://www.flaticon.com/svg/vstatic/svg/174/174857.svg?token=exp=1613168114~hmac=2f326c0bea14c1e9ca64893dd0f2af39"
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/LinkedIn_logo_initials.png/768px-LinkedIn_logo_initials.png"
           alt=""
         />
 
