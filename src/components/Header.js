@@ -1,5 +1,5 @@
 import React from 'react';
-import './Header.css';
+import '../assets/Header.css';
 import SearchIcon from '@material-ui/icons/Search';
 import HeaderOption from './HeaderOption';
 import HomeIcon from '@material-ui/icons/Home';
@@ -8,8 +8,8 @@ import BusinessCenterIcon from '@material-ui/icons/BusinessCenter';
 import ChatIcon from '@material-ui/icons/Chat';
 import NotificationsIcon from '@material-ui/icons/Notifications';
 import { useDispatch } from 'react-redux';
-import {auth} from './firebase';
-import { logout } from './features/userSlice';
+import {auth} from '../firebase';
+import { logout } from '../features/userSlice';
 
 export default function Header () {
 

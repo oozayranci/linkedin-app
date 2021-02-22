@@ -1,14 +1,14 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import React, {useEffect} from 'react';
 import {useSelector, useDispatch} from 'react-redux';
-import './App.css';
 import {selectUser, login, logout} from './features/userSlice';
-import Feed from './Feed';
+import Feed from './components/Feed';
+import Header from './components/Header';
+import Login from './components/Login';
+import Sidebar from './components/Sidebar';
+import Widgets from './components/Widgets';
 import {auth} from './firebase';
-import Header from './Header';
-import Login from './Login';
-import Sidebar from './Sidebar';
-import Widgets from './Widgets';
+import './App.css';
 
 function App () {
   const user = useSelector (selectUser);
