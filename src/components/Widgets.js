@@ -22,7 +22,7 @@ function Widgets () {
         <h2>LinkedIn News</h2>
         <InfoIcon />
       </div>
-      {newsArticle('news goes from here', 'Top news - 99 readers')}
+      {newsArticle('linkedin job topics', 'Market researh conducted this article! - 99314 readers')}
     </div>
   );
 }
