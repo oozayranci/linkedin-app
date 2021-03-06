@@ -1,6 +1,5 @@
 # Direct link to app: 
 https://linkedin-21bfd.web.app/
-- You can register by filling out required fields.
 
 # To run the application:
 
