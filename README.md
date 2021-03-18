@@ -1,4 +1,4 @@
-# Direct link to app: 
+# Overview of the app: 
 https://linkedin-21bfd.web.app/
 
 # To run the application:
